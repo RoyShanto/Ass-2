@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Menubar start */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Azeret Mono", monospace;
+    color: white;
+}
+.flex-display{
+    display: flex;
+}
+#clr-gray{
+    color: gray;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.904);
+    /* box-shadow: #111111; */
+}
+.menubar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.menu_title> i>a, .fitness{
+    text-decoration: none;
+    color: tomato;
+    font-weight: 700;
+    font-size: 50px;
+}
+.menu_items{
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 20px;
+}
+.menu_item{
+   list-style: none;
+    padding: 9px 20px;
+    border-radius: 20px;
+    margin: 2px;
+}
+.menu_item > a, footer a{
+    text-decoration: none;
+}
+.openbtn, .closebtn{
+        display: none;
+}
+
+/* header body start */
+
+.header_body{
+    gap: 50px;
+    align-items: center;
+}
+.header_text{
+    width: 55%;
+}
+.header_title{
+    font-weight: 800;
+    font-size: 40px;
+    /* font-family: ; */
+
+} 
+.header_text div{
+    padding: 25px 100px;
+}
+.join_club, .join_now, .btn_calculate{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: tomato;
+}
+.download_app{
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 99, 71, 0);
+}
+
+.circle{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.video_tutorial{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.185);
+    border-radius: 10px;
+    width: 165px;
+    padding: 20px 20px;
+    position: absolute;
+    top: 510px;
+    left: 49%;
+}
+.free_workout_videos{
+    background-color: rgba(128, 128, 128, 0.185);
+    border-radius: 10px;
+    width: 173px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 240px;
+    left: 78%;
+}
+.free_workout_videos p{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.free_workout_videos h4{
+    font-size: 25px;
+}
+.video_tutorial>div>p{
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.change_container, .habits_container{
+    background-color: black;
+    padding: 50px 100px;
+    text-align: center;
+    gap: 15px;
+    /* border: 1px solid blue; */
+}
+.change_container>div{
+    padding: 0px 80px;
+}
+.change_container>div>h1{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.habits{
+    
+}
+.movement{
+    
+}
+.movement>img, .time>img, .practice>img, .weightloss>img{
+    border-radius: 50%;
+    height: 150px;
+}
+.movement>p, .time>p, .practice>p, .weightloss>p{
+    font-size: 12px;
+    padding-top: 12px
+}
+.movement>h4, .time>h4, .practice>h4, .weightloss>h4{
+    padding-top: 12px
+}
+.run_container{
+    background-color: black;
+}
+.run{
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding: 50px;
+    background-color: rgba(128, 128, 128, 0.26);
+    border-radius: 10px;
+    /* border: 1px solid blue; */
+    gap: 80px;
+}
+.run img{
+    border-radius: 10px;
+    height: 250px;
+    width: 350px;
+    
+}
+.run_text>h1, .run_text>p{
+    padding-bottom: 20px;
+}
+.trainings_container{
+    background-color: black;
+    padding: 50px 100px;
+}
+.training_vision{
+    width: 85%;
+}
+.trainings_container>div>h1, .trainings_container>div>p{
+    padding: 10px 0px;
+}
+.gallery{
+    display: grid;
+}
+#img1, #img2, #img3, #img4, #img5, #img6{
+    width: 100%;
+    height: 210px;
+}
+.gallery_half{
+    grid-template-columns: 27% 1fr 27%;
+}
+.gallery_full{
+    grid-template-columns: 1fr 27% 27%;
+}
+#img1{
+    background-image: url('B10A2-versatile-ui/images/exercise1.jpg');
+    background-size: cover;
+}
+#img2{
+    background-image: url('B10A2-versatile-ui/images/exercise2.png');
+    background-size: cover;
+    /* filter: contrast(180%); */
+}
+#img3{
+    background-image: url('B10A2-versatile-ui/images/exercise3.png');
+    background-size: cover;
+    /* filter: contrast(180%); */
+}
+#img4{
+    background-image: url('B10A2-versatile-ui/images/exercise4.png');
+    background-size: cover;
+    opacity: 50%;
+    /* filter: grayscale(100%); */
+}
+#img5{
+    background-image: url('B10A2-versatile-ui/images/exercise5.jpg');
+    background-size: cover;
+    filter: saturate(4);
+}
+#img6{
+    background-image: url('B10A2-versatile-ui/images/exercise6.jpg');
+    background-size: cover;
+    /* filter: saturate(7); */
+}
+.trainings_container h4{
+    padding-left: 20px;
+}
+
+.gallery>div{
+    /* filter: contrast(180%); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BMI Section */
+.bmi_container{
+    background-color: black;
+}
+.bmi{
+    background-color: rgba(128, 128, 128, 0.26);
+    align-content: center;
+    padding: 50px 0px;
+}
+.chart{
+    width: 30%;
+    /* border: 1px solid blue; */
+    padding: 0px 100px;
+
+}
+.bmi_text{
+    padding: 50px 250px;
+}
+.bmi_text>h1{
+    padding-bottom: 10px;
+}
+.calculate{
+    width: 49%;
+}
+.calculate h3,p, .chart>h3{
+    padding-bottom: 10px;
+}
+th, td{
+    padding: 10px;
+}
+.calculate input, select, option{
+    background-color: rgba(128, 128, 128, 0.308);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    width: 36%;
+}
+#sex{
+    width: 39%;
+}
+#activity{
+    width: 80%;
+    margin-left: 5px;
+}
+.btn_calculate{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+/* Meet Section */
+
+.meet_container{
+    background-color: black;
+    text-align: center;
+    padding: 50px 100px;
+}
+.meet_vision{
+    padding: 20px 150px;
+}
+.trainers{
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 10px;
+    text-align: left;
+}
+.trainers>div{
+    gap: 20px;
+}
+.half_gallery{
+    padding: 20px 20px;
+}
+.full_gallery{
+    padding: 0px 20px 20px;
+}
+.gallery_img{
+    width: 32%;
+    height: 250px;
+    border-radius: 10px;
+    padding-left: 20px;
+    /* padding-top: 20px; */
+}
+
+/* Footer  */
+footer{
+    background-color: black;
+}
+.footer_container{
+    background-color: rgba(128, 128, 128, 0.308);
+    padding: 50px 100px;
+}
+.footer_section{
+    justify-content: space-between;
+}
+.footer_section>div{
+    /* border: 1px solid blue; */
+    padding: 20px;
+}
+.footer_text{
+    width: 50%;
+}
+.footer_text>p{
+    padding-top: 10px;
+}
+.footer_link p{
+    padding: 10px 0px;
+}
+hr{
+    margin: 30px;
+    border: 1px solid gray;
+}
+.copywrite{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+@media only screen and (max-width: 600px) {
+    .menubar{
+        padding: 25px;
+    }
+    .menu_items{
+        flex-direction: column;
+    }
+    .openbtn, .closebtn{
+        display: inline;
+    }
+
+    .menu_title i{
+        color: white;
+    }
+
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111111a1;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      text-decoration: none;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 36px;
+      color: white;
+    }
+
+    /* header */
+    .header_body{
+        flex-direction: column;
+    }
+    .header_text div{
+    padding: 25px 0px;
+    }
+    .header_text{
+        width: 90%;
+    }
+    #club{
+        display: none;
+    }
+    .circle>div{
+        margin: 7px 0px 0px 10px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 14px solid white; 
+    }
+    .video_tutorial{
+        justify-content: center;
+        padding: 15px 8px;
+        width: 150px;
+        top: 830px;
+        left: 6%;
+        gap: 10px;
+    }
+    .free_workout_videos{
+        padding: 15px 8px;
+        width: 130px;
+        top: 600px;
+        left: 54%;
+    }
+    .free_workout_videos p {
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    .video_tutorial>div>p{
+        font-size: 12px;
+    }
+
+
+
+    .change_container, .habits_container, .run{
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .change_container>div{
+        padding: 0px 0px;
+        padding-bottom: 30px;
+    }
+    .change_container>div>h1{
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .habits_container{
+        padding: 80px;
+    }
+
+
+
+    .run{
+        margin: 0px 20px;
+        padding: 30px;
+    }
+    .join_now{
+        padding: 10px 120px;
+    }
+
+    .run img{
+        width: 330px;
+    }
+
+
+
+
+
+    .trainings_container{
+        padding: 50px 20px;
+    }
+    .training_vision{
+        width: 95%;
+    }
+    .trainings_container>div>h1, .trainings_container>div>p{
+        padding: 10px 0px;
+    }
+    .gallery{
+        display: grid;
+    }
+    #img3, #img6{
+        display: none;
+    }
+    #img1, #img2, #img4, #img5{
+        width: 100%;
+        height: 120px;
+    }
+    .gallery_half{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery_full{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+    .bmi{
+        flex-direction: column;
+    }
+    .chart{
+        width: 100%;
+        padding: 20px 30px;
+
+    }
+    .bmi_text{
+        padding: 50px 10px;
+    }
+    .calculate{
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+
+
+    .meet_container{
+        padding: 50px 10px;
+    }
+    .meet_vision{
+        padding: 20px 0px;
+    }
+    .half_gallery{
+        flex-direction: column;
+    }
+    .full_gallery{
+        flex-direction: column;
+    }
+    .gallery_img{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+
+    .footer_container{
+        padding: 50px 0px;
+    }
+    .footer_section{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+} 
